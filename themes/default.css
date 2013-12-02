@@ -1,0 +1,79 @@
+*, div, td {font-family:Ubuntu, sans-serif;}
+code {font-family:monospace;}
+a:visited {color:#557;}
+a {color:#224;}
+ol, ul {list-style-type:square; padding:0 2.6em; margin-top:0; margin-bottom:2em; border-left:1px dotted #bbb;}
+ol ol, ul ul {border-left-style:none; list-style-type:disc;}
+ol ul, ul ol {border-style:none; padding-top:0.5em;}
+ol ul li, ul ol li {line-height:0.6em;}
+li ul {margin-top:0.5em;}
+ol li, ul li {margin-bottom:1.2em; line-height:1.4em;}
+ol li:last-child, ul li:last-child {margin-bottom:0;}
+ol li p:first-child, ul li p:first-child {margin-top:0;}
+ul li label, ol li label, label {width:120px; display: inline-block;}
+pre {font-family:monospace; font-size:125%; background-color:#fee; padding:1em; margin:1em 0;}
+ul li a, ol li a, ul li label, ol li label, label {font-size:100%;} /* for chrome on phones */
+
+h1, h2, h3, h4, h5, h6 {margin-top:2.2em; margin-bottom:0.5em; color:#222; font-family:Ubuntu Condensed, Trebuchet MS, serif; letter-spacing:0.04em; clear:both;}
+h1 {margin-top:3em; font-size:150%; border-bottom:1px solid #ddd; text-transform: uppercase;}
+h2 {font-size:150%; border-bottom: 1px dotted #600; color:#600; padding-bottom:0.04em;}
+h3 {font-size:120%;}
+h4,h5,h6 {font-size:110%;}
+p {white-space: pre-wrap; line-height:1.8em;}
+#header, #main-column, footer {text-align:left; margin:auto;}
+#main-column, footer {padding:0 60px; width:620px;}
+#header {width:620px;}
+body {text-align:center; margin:0;}
+
+iframe.timeline {width:920px; margin-left:-150px; box-shadow:#aaa 1px 2px 6px 1px; background-color:white;}
+
+#toc-container {text-align:center; margin-top:-1em !important;}
+#TOC {margin:auto;width:260px; padding:1em;}
+#TOC * {text-align:left;}
+#TOC h2 {background-color:transparent; text-align:center; text-transform: uppercase;}
+#TOC ul {margin:1em 0; border-style:none; padding: 0 2em;}
+
+aside {opacity:0.4; background-color:white; text-align:left;}
+aside .caption {margin-bottom:0;}
+.side-image {float:right; margin-left:1em;}
+.headnote {color:#555; font-size:95%; margin-bottom:3.5em; margin-top:-0.6em;}
+.headnote-left {float:left;}
+.headnote-right {float:right;}
+#main-content p:first-child {margin-top:0;}
+#main-content {padding-top:1.5em; padding-bottom:1em;}
+#main-content *:first-child {margin-top:0;}
+
+table {width:100%;}
+table {border-spacing:0; background-color:#eee; padding:4px; border-collapse:collapse;}
+table td {border-width:1px 0; border-style:solid; border-color:#888;}
+table th, table td {max-width:1000px; font-size:90%;padding: 0.4em;}
+table thead {background-color:white;}
+tbody tr:nth-child(even) {background-color:#fff;}
+
+#header {margin-bottom:2em; margin-top:6em; font-size:140%;}
+.title {margin:0; border-bottom-style: none; width: 100%; font-size:340%; text-transform: none;}
+.title .first-name {font-family:inherit; line-height:1em;}
+.title .subtitle {font-size:70%; color: #600; font-family:inherit; letter-spacing: -0.01em; display:block; margin-top:0.3em;}
+img {border:1px #aaa solid; max-width:608px;}
+.subtitle, .caption {font-size:95%; padding:2px; color:#555;}
+li p {margin-top:1em; margin-bottom:0;}
+
+.toc ul {margin-bottom:1em;}
+.toc li {line-height:1.5em;}
+
+footer {margin-top:4em; text-align:left; font-size:70%; padding:1px 3px; color:#888; clear:both;}
+.endnote {font-size:90%; color: #555; margin-top:4em;}
+
+.box {padding:1em 1.5em; clear:both; line-height:1.8em;}
+.box p {margin-top:0;}
+#TOC, .sidebox, .box  { box-shadow:#aaa -1px 2px 3px 0px; background-color:#ffffd0;}
+blockquote {color:#666; padding:12px 15px 5px 56px; line-height:1.5em; background-image:url(quotes.png); background-repeat:no-repeat; margin:0 0 0.5em 0; background-position:1em 15px;}
+.sidebox {padding:1em 1em; line-height:1.6em; font-size:125%; width:45%; float:right; margin:1em 0 1em 1.4em; clear:both;}
+.sidebox blockquote {padding: 0; padding-left:38px; box-shadow:none; background-color:transparent; background-position: 0 0;}
+#main-content blockquote {clear:both;}
+
+.slim {padding:12px; font-size:90%;}
+.slim img {border-width:1px;}
+
+.wide {width:680px;}
+.widen img {width:100%;}
