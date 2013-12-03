@@ -4,6 +4,10 @@ require 'tempfile'
 
 content = File.open(ARGV[0]){|f| f.read}
 
+def construct_path string
+  File.expand_path(string, File.realpath(__FILE__))
+end
+
 # Add a title block using the filename
 title = File.basename(ARGV[0], File.extname(ARGV[0])).split(/-|_/).map{|s| s[0].upcase + s[1,s.size];}.join(" ")
 if title.include? ":"
@@ -17,13 +21,13 @@ temp_file.write("% #{title}\n")
 
 temp_file.write("\n<div id='main-column'>\n")
 
-ubuntu_font = File.expand_path('../ubuntu.woff', __FILE__)
+ubuntu_font = construct_path('../ubuntu.woff')
 temp_file.write("<link href='#{ubuntu_font}' rel='stylesheet' type='text/css'>")
 
-jquery = File.expand_path('../jquery-1.10.1.min.js', __FILE__)
+jquery = construct_path('../jquery-1.10.1.min.js')
 temp_file.write("<script src='#{jquery}'></script>")
 
-sorttable = File.expand_path('../sorttable.js', __FILE__)
+sorttable = construct_path('../sorttable.js')
 temp_file.write("<script src='#{sorttable}'></script>")
 
 js =<<EOS
@@ -76,5 +80,5 @@ temp_file.write("<footer>#{Time.now.strftime("Published %B %e, %Y @ %H:%M %Z")}<
 
 temp_file.close
 
-css = File.expand_path('../themes/default.css', __FILE__)
+css = construct_path('../themes/default.css')
 puts `pandoc -f markdown -t html --self-contained --css "#{css}" "#{temp_file.path}"`
