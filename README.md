@@ -1,6 +1,6 @@
-This script converts markdown files to html with readability in mind.
+This script converts markdown files to HTML with readability in mind.
 
-It also adds some cool features like timestamping and sortable column tables. And the resulting html file is self-contained.
+It also adds some cool features like timestamping and sortable column tables. And the resulting HTML file is self-contained.
 
 You can easily tweak the looks by tweaking the `default.css` file.
 
@@ -11,6 +11,11 @@ You can easily tweak the looks by tweaking the `default.css` file.
 4. Open `test.html` in your browser
 
 And read your markdown files in style.
+
+# Screenshot
+![](screenshot.png)
+Here is what it looks like in HTML.
+
 
 # Tools Remixed
 - [ruby](https://www.ruby-lang.org)
