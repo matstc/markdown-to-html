@@ -5,9 +5,10 @@ It also adds some cool features like timestamping and sortable column tables. An
 You can easily tweak the looks by tweaking the `default.css` file.
 
 # How To Use
-1. Install [pandoc](http://johnmacfarlane.net/pandoc/)
-2. `./markdown_to_html test:-a-test-file.md.md > test.html`
-3. Open `test.html` in your browser
+1. Make sure you have `ruby` installed
+2. Install [pandoc](http://johnmacfarlane.net/pandoc/)
+3. `./markdown_to_html test:-a-test-file.md.md > test.html`
+4. Open `test.html` in your browser
 
 And read your markdown files in style.
 
