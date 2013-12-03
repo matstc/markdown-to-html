@@ -1,5 +1,5 @@
 *, div, td {font-family:Ubuntu, sans-serif;}
-code {font-family:monospace;}
+code {font-family:monospace; font-size:120%;}
 a:visited {color:#557;}
 a {color:#224;}
 ol, ul {list-style-type:square; padding:0 2.6em; margin-top:0; margin-bottom:2em; border-left:1px dotted #bbb;}
