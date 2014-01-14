@@ -16,7 +16,7 @@ if title.include? ":"
   title.sub!(/$/,"</span>")
 end
 
-temp_file = Tempfile.new('wrap-markdown')
+temp_file = Tempfile.new('markdown_to_html', encoding: 'utf-8')
 temp_file.write("% #{title}\n")
 
 temp_file.write("\n<div id='main-column'>\n")
@@ -81,4 +81,5 @@ temp_file.write("<footer>#{Time.now.strftime("Published %B %e, %Y @ %H:%M %Z")}<
 temp_file.close
 
 css = construct_path('../themes/default.css')
+
 puts `pandoc -f markdown -t html --self-contained --css "#{css}" "#{temp_file.path}"`
