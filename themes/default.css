@@ -1,5 +1,5 @@
 *, div, td {font-family:Ubuntu, sans-serif;}
-code {font-family:monospace; font-size:120%;}
+code {font-family:monospace; font-size:120%; background-color:#eee;}
 a:visited {color:#557;}
 a {color:#224;}
 ol, ul {list-style-type:square; padding:0 2.6em; margin-top:0; margin-bottom:2em; border-left:1px dotted #bbb;}
@@ -66,7 +66,7 @@ footer {margin-top:4em; text-align:left; font-size:70%; padding:1px 3px; color:#
 
 .box {padding:1em 1.5em; clear:both; line-height:1.8em;}
 .box p {margin-top:0;}
-#TOC, .sidebox, .box  { box-shadow:#aaa -1px 2px 3px 0px; background-color:#ffffd0;}
+#TOC, .sidebox, .box  { box-shadow:#aaa -1px 2px 3px 0px; background-color:#fee;}
 blockquote {padding:12px 15px 5px 56px; line-height:1.5em; background-image:url(quotes.png); background-repeat:no-repeat; margin:0 0 0.5em 0; background-position:1em 15px;}
 .sidebox {padding:1em 1em; line-height:1.6em; font-size:125%; width:45%; float:right; margin:1em 0 1em 1.4em; clear:both;}
 .sidebox blockquote {padding: 0; padding-left:38px; box-shadow:none; background-color:transparent; background-position: 0 0;}
