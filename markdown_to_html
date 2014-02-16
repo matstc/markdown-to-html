@@ -27,8 +27,8 @@ temp_file.write("<link href='#{ubuntu_font}' rel='stylesheet' type='text/css'>")
 jquery = construct_path('../jquery-1.10.1.min.js')
 temp_file.write("<script src='#{jquery}'></script>")
 
-sorttable = construct_path('../sorttable.js')
-temp_file.write("<script src='#{sorttable}'></script>")
+tablesort = construct_path('../tablesort.js')
+temp_file.write("<script src='#{tablesort}'></script>")
 
 js =<<EOS
 <script language="javascript">
@@ -57,7 +57,7 @@ var setupAsides = function(){
   reposition();
 
   $("table").each(function(_, table){
-    sorttable.makeSortable(table);
+    new Tablesort(table);
   });
 
   var tableHeaders = $("th")

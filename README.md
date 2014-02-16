@@ -20,7 +20,7 @@ Here is what it looks like in HTML.
 # Tools Remixed
 - [ruby](https://www.ruby-lang.org)
 - [jquery.js](http://jquery.com/)
-- [sorttable.js](http://www.kryogenix.org/code/browser/sorttable/)
+- [tablesort](https://github.com/tristen/tablesort)
 - [markdown](http://daringfireball.net/projects/markdown/)
 - [pandoc](http://johnmacfarlane.net/pandoc/)
 - [ubuntu font](http://font.ubuntu.com/)
