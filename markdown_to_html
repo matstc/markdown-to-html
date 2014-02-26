@@ -19,10 +19,10 @@ end
 temp_file = Tempfile.new('markdown_to_html', encoding: 'utf-8')
 temp_file.write("% #{title}\n")
 
-temp_file.write("\n<div id='main-column'>\n")
+temp_file.write("<style>#{File.read construct_path("../themes/cantora.css")}</style>")
+temp_file.write("<style>#{File.read construct_path("../themes/ubuntu.css")}</style>")
 
-ubuntu_font = construct_path('../ubuntu.woff')
-temp_file.write("<link href='#{ubuntu_font}' rel='stylesheet' type='text/css'>")
+temp_file.write("\n<div id='main-column'>\n")
 
 jquery = construct_path('../jquery-1.10.1.min.js')
 temp_file.write("<script src='#{jquery}'></script>")
