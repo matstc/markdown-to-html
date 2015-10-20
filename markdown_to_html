@@ -17,7 +17,10 @@ if title.include? ":"
 end
 
 temp_file = Tempfile.new('markdown_to_html', encoding: 'utf-8')
-temp_file.write("% #{title}\n")
+temp_file.write("---\n")
+temp_file.write("title: #{title}\n")
+temp_file.write(%Q{header-includes:\n\t<meta name="viewport" content="width=device-width, initial-scale=1">\n})
+temp_file.write("---\n\n")
 
 temp_file.write("<style>#{File.read construct_path("../themes/cantora.css")}</style>")
 temp_file.write("<style>#{File.read construct_path("../themes/ubuntu.css")}</style>")
