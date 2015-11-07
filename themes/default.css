@@ -14,6 +14,7 @@ ol li p:first-child, ul li p:first-child {margin-top:0;}
 ul li label, ol li label, label {width:120px; display: inline-block;}
 pre {font-family:monospace; font-size:125%; background-color:#fee; padding:1em; margin:1em 0;}
 ul li a, ol li a, ul li label, ol li label, label {font-size:100%;} /* for chrome on phones */
+hr {width:80%; margin: 100px 0 100px 0; position:relative; left:10%;}
 
 h1, h2, h3, h4, h5, h6 {margin-top:2.2em; margin-bottom:0.5em; color:#222; font-family:Ubuntu Condensed, Trebuchet MS, serif; letter-spacing:0.04em; clear:both;}
 h1 {margin-top:3em; font-size:150%; border-bottom:1px solid #ddd; text-transform: uppercase;}
